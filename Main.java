@@ -4,8 +4,8 @@ public class Main {
         System.out.println("java test code....");
 
         Car car = new Car();
-        car.carInfo("audi", "white", 5, 220);
+        car.carInfo("audi", "yellow", 5, 220);
 
-        System.out.println(car.getCarInfo());
+        System.out.println(car.getCarInfo("colour"));
     }
 }

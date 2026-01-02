@@ -11,10 +11,22 @@ public class Car {
         carSpeed = speed;
     }
 
-    public String getCarInfo() {
+    public String getCarInfo(String carData) {
 
-        // String[] carinfo = { carBrand, carColour };
-        return carBrand;
+        switch (carData) {
+            case "colour": {
+                return carColour;
+
+            }
+            case "brand": {
+                return carBrand;
+            }
+            default: {
+                return "please send valid data";
+
+            }
+
+        }
 
     }
 }
