@@ -4,8 +4,8 @@ public class Car {
     int carAge;
     int carSpeed;
 
-    public void carInfo(String brand, String colour, int age, int speed) {
-        carBrand = brand;
+    public void carInfo(String carBrand, String colour, int age, int speed) {
+        this.carBrand = carBrand;
         carColour = colour;
         carAge = age;
         carSpeed = speed;
