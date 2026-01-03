@@ -13,19 +13,21 @@ class InnerMain {
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("java test code....");
+        // System.out.println("java test code....");
 
-        Car car = new Car();
-        car.carInfo("audi", "yellow", 5, 220);
+        // Car car = new Car();
+        // car.carInfo("audi", "yellow", 5, 220);
 
-        System.out.println(car.getCarInfo("brand"));
+        // System.out.println(car.getCarInfo("brand"));
 
-        InnerMain inMain = new InnerMain();
-        inMain.innerMain();
+        // InnerMain inMain = new InnerMain();
+        // inMain.innerMain();
 
         // call add method from calculation package
-        Calculation calc = new Calculation("15");
-        calc.add(5, 10);
+        Calculation calc = new Calculation();
+        // calc.add(5, 10);
+        calc.setData("getter-setters");
+        System.out.println(calc.getData());
 
         // Calculation dataCal = new Calculation(); // one class can have multiple
         // objects
