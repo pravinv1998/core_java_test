@@ -1,7 +1,7 @@
 
 // import calculation.*;   //import this way or
-import java.util.Calendar;
-import java.util.Date;
+// import java.util.Calendar;
+// import java.util.Date;
 
 import calculation.Calculation; // this way 
 
@@ -24,10 +24,14 @@ public class Main {
         // inMain.innerMain();
 
         // call add method from calculation package
-        Calculation calc = new Calculation();
-        // calc.add(5, 10);
-        calc.setData("getter-setters");
+        Calculation calc = new Calculation("namedata");
+        System.out.println(calc.getData()); 
+        calc.data = "mydata";
         System.out.println(calc.getData());
+        // calc.data = "name";
+        // calc.add(5, 10);
+        // calc.setData("getter-setters");
+        // System.out.println(calc.getData());
 
         // Calculation dataCal = new Calculation(); // one class can have multiple
         // objects

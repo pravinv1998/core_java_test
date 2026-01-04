@@ -1,8 +1,7 @@
 package calculation;
 
 public class Calculation {
-    int num;
-    String data;
+    public String data;
 
     // single parameter constructor
     public Calculation(String data) {
@@ -21,6 +20,10 @@ public class Calculation {
     // setter
     public void setData(String data) {
         this.data = data;
+    }
+
+    public void printData() {
+        System.out.println(data);
     }
 
     public void add(int num1, int num2) {
