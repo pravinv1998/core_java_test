@@ -4,6 +4,7 @@
 // import java.util.Date;
 
 import calculation.Calculation; // this way 
+import opps.encapsulation.EncapsulationDemo;
 
 class InnerMain {
     public void innerMain() {
@@ -25,7 +26,7 @@ public class Main {
 
         // call add method from calculation package
         Calculation calc = new Calculation("namedata");
-        System.out.println(calc.getData()); 
+        System.out.println(calc.getData());
         calc.data = "mydata";
         System.out.println(calc.getData());
         // calc.data = "name";
@@ -41,5 +42,11 @@ public class Main {
         // Date dt = new Date();
         // System.out.println(dt.getTime());
 
+        // ===========================**********OPPS*********===========================
+
+        // Encapsulation
+        System.out.println("==============Encapsulation==============");
+        EncapsulationDemo encapsulationDemo = new EncapsulationDemo();
+        encapsulationDemo.encapsulationDemo("Pravin Vargad", "8308383832");
     }
 }
