@@ -5,6 +5,8 @@
 
 import calculation.Calculation; // this way 
 import opps.encapsulation.EncapsulationDemo;
+import opps.inheritance.Bike;
+import opps.inheritance.Car;
 
 class InnerMain {
     public void innerMain() {
@@ -48,5 +50,20 @@ public class Main {
         System.out.println("==============Encapsulation==============");
         EncapsulationDemo encapsulationDemo = new EncapsulationDemo();
         encapsulationDemo.encapsulationDemo("Pravin Vargad", "8308383832");
+
+        // inheritance
+        System.out.println("\n\n==============Inheritance==============");
+        Bike bike = new Bike("maruti suzuki", 150, "no");
+        bike.bikeInheritanceDemo();
+        // bike.setBrand("Audi");
+        // System.out.println(bike.brand); // only work if parent class variable is
+        // public
+        // System.out.println(bike.getBrand()); // use getter and setter to access
+        // private varible - encapsulation
+
+        Car car = new Car("Audi", 200, 5);
+        System.out.println(car.getDoors());
+
     }
+
 }
