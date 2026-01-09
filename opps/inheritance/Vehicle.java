@@ -25,7 +25,7 @@ public class Vehicle {
         this.speed = speed;
     }
 
-    public void showInfo() {
+    public void displayInfo() {
         System.out.println("Brand: " + brand + ", Speed: " + speed + "Km/H.");
     }
 

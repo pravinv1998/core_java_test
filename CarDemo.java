@@ -1,4 +1,4 @@
-public class Car {
+public class CarDemo {
     String carBrand;
     String carColour;
     int carAge;

@@ -63,6 +63,7 @@ public class Main {
 
         Car car = new Car("Audi", 200, 5);
         System.out.println(car.getDoors());
+        car.displayInfo();
 
     }
 

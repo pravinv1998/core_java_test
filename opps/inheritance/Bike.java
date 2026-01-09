@@ -8,6 +8,14 @@ public class Bike extends Vehicle {
         this.hasCarrier = hasCarrier;
     }
 
+    public String getHasCarrier() {
+        return hasCarrier;
+    }
+
+    public void setHasCarrier(String hasCarrier) {
+        this.hasCarrier = hasCarrier;
+    }
+
     public void bikeInheritanceDemo() {
         System.out.println(hasCarrier);
         System.out.println(getBrand());

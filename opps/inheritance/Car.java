@@ -12,4 +12,14 @@ public class Car extends Vehicle {
         return doors;
     }
 
+    public void setDoors(int doors) {
+        this.doors = doors;
+    }
+
+    @Override
+    public void displayInfo() {
+        super.displayInfo();
+        System.out.println("Brand: " + getBrand() + ", Speed: " + getSpeed() + "Km/H. & doors " + doors);
+    }
+
 }
