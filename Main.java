@@ -5,8 +5,12 @@
 
 import calculation.Calculation; // this way 
 import opps.encapsulation.EncapsulationDemo;
-import opps.inheritance.Bike;
-import opps.inheritance.Car;
+// import opps.inheritance.Vehicle;
+// import opps.inheritance.Bike;
+// import opps.inheritance.Car;
+import opps.polymorphism.Bike;
+import opps.polymorphism.Car;
+import opps.polymorphism.Vehicle;;
 
 class InnerMain {
     public void innerMain() {
@@ -64,6 +68,21 @@ public class Main {
         Car car = new Car("Audi", 200, 5);
         System.out.println(car.getDoors());
         car.displayInfo();
+
+        // polymotphism
+        System.out.println("\n\n==============Polymorphism==============");
+
+        // main parent class polymorphism
+        Vehicle vehicle = new Vehicle("Audi", 200);
+        vehicle.start();
+
+        // car class polymorphism
+        Vehicle vehicle2 = new Car("Audi", 200, 5);
+        vehicle2.start();
+
+        // bike class polymorphism
+        Vehicle vehicle3 = new Bike("Audi", 200, "No");
+        vehicle3.start();
 
     }
 
