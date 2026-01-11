@@ -84,6 +84,21 @@ public class Main {
         Vehicle vehicle3 = new Bike("Audi", 200, "No");
         vehicle3.start();
 
+        // compile time polymorphism
+        Calculator cal = new Calculator();
+        System.out.println(cal.addNum(5, 10));
+        System.out.println(cal.addNum(5.5, 10.5));
+
     }
 
+}
+
+class Calculator { // compile time polymorphism
+    public int addNum(int num1, int num2) {
+        return num1 + num2;
+    }
+
+    public double addNum(double num1, double num2) {
+        return num1 + num2;
+    }
 }
