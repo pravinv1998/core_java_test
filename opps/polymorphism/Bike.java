@@ -16,8 +16,13 @@ public class Bike extends Vehicle {
         this.hasCarrier = hasCarrier;
     }
 
+    @Override
     public void start() {
         System.out.println("Start Bike");
+    }
+
+    public void start(String bike) {
+        System.out.println("Start Bike" + bike);
     }
 
     public void bikeInheritanceDemo() {

@@ -72,22 +72,26 @@ public class Main {
         // polymotphism
         System.out.println("\n\n==============Polymorphism==============");
 
-        // main parent class polymorphism
+        // main parent class method overriding runtime polymorphism
         Vehicle vehicle = new Vehicle("Audi", 200);
         vehicle.start();
 
-        // car class polymorphism
+        // car class method overriding runtime polymorphism
         Vehicle vehicle2 = new Car("Audi", 200, 5);
         vehicle2.start();
 
-        // bike class polymorphism
+        // bike class method overriding runtime polymorphism
         Vehicle vehicle3 = new Bike("Audi", 200, "No");
         vehicle3.start();
 
-        // compile time polymorphism
+        // compile time polymorphism , mothod overloading
         Calculator cal = new Calculator();
         System.out.println(cal.addNum(5, 10));
         System.out.println(cal.addNum(5.5, 10.5));
+
+        // compile time polymorphism , mothod overloading
+        Bike vl = new Bike("Honda", 150, "Yes");
+        vl.start("Honda");
 
     }
 
